@@ -5,24 +5,24 @@
   padding: 0;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body {
   background-color: lightblue;
+  /* CSS Smooth Scroll */
+  overflow: hidden;
 }
 
-.container nav {
+body .container {
+  /* CSS Smooth Scroll -> width & height must be set or it won't work*/
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body .container nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,15 @@
   background-color: white;
 }
 
-.container nav .logo {
+body .container nav .logo {
+  margin-right: 150px;
+}
+
+body .container nav .logo:hover {
+  cursor: pointer;
+}
+
+body .container nav .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,25 +55,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 150px;
+  text-decoration: none;
+  color: black;
 }
 
-.container nav .logo i.fas {
+body .container nav .logo a i.fas {
   color: yellowgreen;
 }
 
-.container nav .logo p {
+body .container nav .logo a p {
   font-size: 1.8rem;
   margin-left: 10px;
 }
 
-.container nav .logo p span {
+body .container nav .logo a p span {
   color: yellowgreen;
   font-weight: bold;
   font-style: oblique;
 }
 
-.container nav ul {
+body .container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,36 +84,36 @@
           justify-content: space-between;
 }
 
-.container nav ul li {
+body .container nav ul li {
   list-style: none;
 }
 
-.container nav ul li a {
+body .container nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
   color: gray;
 }
 
-.container nav ul li a:hover {
+body .container nav ul li a:hover {
   border-bottom: 1px solid yellowgreen;
   color: yellowgreen;
 }
 
-.container nav .account {
+body .container nav .account {
   margin-left: 200px;
 }
 
-.container nav .account button {
+body .container nav .account button {
   font-size: 1.2rem;
   padding: 0.25rem 1rem;
 }
 
-.container nav .account .login {
+body .container nav .account .login {
   border: none;
   background-color: lightgray;
 }
 
-.container nav .account .login:hover {
+body .container nav .account .login:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -112,14 +121,14 @@
           box-shadow: 2px 2px 5px black;
 }
 
-.container nav .account .signup {
+body .container nav .account .signup {
   background-color: yellowgreen;
   color: white;
   margin-left: 10px;
   border: none;
 }
 
-.container nav .account .signup:hover {
+body .container nav .account .signup:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -127,7 +136,21 @@
           box-shadow: 2px 2px 5px black;
 }
 
-.container section {
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   width: 100%;
   height: 100vh;
 }

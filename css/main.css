@@ -41,10 +41,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -52,6 +48,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 150px;
+}
+
+.container nav .logo i.fas {
+  color: yellowgreen;
+}
+
+.container nav .logo p {
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+.container nav .logo p span {
+  color: yellowgreen;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 .container nav ul {
@@ -75,7 +86,49 @@
 }
 
 .container nav ul li a:hover {
-  border-bottom: 1px solid black;
-  color: black;
+  border-bottom: 1px solid yellowgreen;
+  color: yellowgreen;
+}
+
+.container nav .account {
+  margin-left: 200px;
+}
+
+.container nav .account button {
+  font-size: 1.2rem;
+  padding: 0.25rem 1rem;
+}
+
+.container nav .account .login {
+  border: none;
+  background-color: lightgray;
+}
+
+.container nav .account .login:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.container nav .account .signup {
+  background-color: yellowgreen;
+  color: white;
+  margin-left: 10px;
+  border: none;
+}
+
+.container nav .account .signup:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.container section {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

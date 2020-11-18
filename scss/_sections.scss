@@ -98,5 +98,50 @@ body {
         }
       }
     }
+
+    #about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: lighten($color: $primary-color, $amount: 25%);
+
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .about-text {
+
+          h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 3rem;
+          }
+  
+          ul {
+            list-style: none;
+  
+            li {
+              font-size: 2rem;
+            }
+          }
+        }
+  
+        img {
+          width: 600px;
+          height: 450px;
+        }
+      }
+
+      .bottom {
+
+        .languages-wrapper {
+          display: flex;
+
+          
+        }
+      }
+    }
   }
 }

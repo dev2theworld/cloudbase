@@ -236,4 +236,58 @@ body .container #home .top-wrapper .text-wrapper button:hover {
   -webkit-box-shadow: 2px 2px 5px black;
           box-shadow: 2px 2px 5px black;
 }
+
+body .container #about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cde699;
+}
+
+body .container #about .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container #about .top .about-text h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+body .container #about .top .about-text ul {
+  list-style: none;
+}
+
+body .container #about .top .about-text ul li {
+  font-size: 2rem;
+}
+
+body .container #about .top img {
+  width: 600px;
+  height: 450px;
+}
+
+body .container #about .bottom .languages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */

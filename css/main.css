@@ -268,7 +268,6 @@ body .container #about .top {
 
 body .container #about .top .about-text h1 {
   font-size: 3.5rem;
-  color: white;
   margin-bottom: 3rem;
 }
 
@@ -281,13 +280,49 @@ body .container #about .top .about-text ul li {
 }
 
 body .container #about .top img {
-  width: 600px;
-  height: 450px;
+  width: 500px;
+  height: 350px;
+}
+
+body .container #about .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+}
+
+body .container #about .bottom h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
 body .container #about .bottom .languages-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container #about .bottom .languages-wrapper .language {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
 }
 /*# sourceMappingURL=main.css.map */

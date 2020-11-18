@@ -1,0 +1,96 @@
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: white;
+
+  .logo {
+    margin-right: 150px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: black;
+
+      i.fas {
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 2.2rem;
+        margin-left: 10px;
+
+        span {
+          color: $primary-color;
+          font-weight: bold;
+          font-style: oblique;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: gray;
+
+        &:hover {
+          border-bottom: 1px solid $primary-color;
+          color: yellowgreen;
+        }
+      }
+    }
+  }
+
+  .account {
+    margin-left: 200px;
+
+    button {
+      font-size: 1.2rem;
+      padding: 0.25rem 1rem;
+    }
+
+    .login {
+      border: none;
+      background-color: lightgray;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 2px 2px 5px black;
+      }
+    }
+
+    .signup {
+      background-color: $primary-color;
+      color: white;
+      margin-left: 10px;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 2px 2px 5px black;
+      }
+    }
+  }
+}

@@ -4,9 +4,12 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+
 $primary-color: yellowgreen;
 
 body {
+  font-family: 'Big Shoulders Stencil Display', cursive;
   background-color: lightblue;
   /* CSS Smooth Scroll */
   overflow: hidden;
@@ -48,7 +51,7 @@ body {
           }
     
           p {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             margin-left: 10px;
     
             span {
@@ -70,7 +73,7 @@ body {
   
           a {
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             color: gray;
   
             &:hover {
@@ -160,7 +163,7 @@ body {
           }
     
           p {
-            font-size: 3.6rem;
+            font-size: 3.8rem;
             margin-left: 10px;
     
             span {
@@ -172,20 +175,32 @@ body {
         }
 
         .text-wrapper {
-          padding: 3rem 1rem;
+          padding: 2rem 1rem;
 
           h1 {
-            font-size: 3.6rem;
-            color: $primary-color;
-          }
-
-          h2 {
-            font-size: 2.7rem;
+            font-size: 3.2rem;
             color: $primary-color;
           }
 
           p {
+            font-size: 2rem;
             margin-top: 2rem;
+            padding: 0 4.5rem;
+          }
+
+          button {
+            margin-top: 1.6rem;
+            font-size: 1.4rem;
+            padding: 0.25rem 0.75rem;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.05);
+              box-shadow: 2px 2px 5px black;
+            }
           }
         }
       }

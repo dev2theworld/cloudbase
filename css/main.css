@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,6 +7,7 @@
 }
 
 body {
+  font-family: 'Big Shoulders Stencil Display', cursive;
   background-color: lightblue;
   /* CSS Smooth Scroll */
   overflow: hidden;
@@ -64,7 +66,7 @@ body .container nav .logo a i.fas {
 }
 
 body .container nav .logo a p {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-left: 10px;
 }
 
@@ -90,7 +92,7 @@ body .container nav ul li {
 
 body .container nav ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: gray;
 }
 
@@ -193,7 +195,7 @@ body .container #home .top-wrapper .main-logo i.fas {
 }
 
 body .container #home .top-wrapper .main-logo p {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
   margin-left: 10px;
 }
 
@@ -204,20 +206,34 @@ body .container #home .top-wrapper .main-logo p span {
 }
 
 body .container #home .top-wrapper .text-wrapper {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 body .container #home .top-wrapper .text-wrapper h1 {
-  font-size: 3.6rem;
-  color: yellowgreen;
-}
-
-body .container #home .top-wrapper .text-wrapper h2 {
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   color: yellowgreen;
 }
 
 body .container #home .top-wrapper .text-wrapper p {
+  font-size: 2rem;
   margin-top: 2rem;
+  padding: 0 4.5rem;
+}
+
+body .container #home .top-wrapper .text-wrapper button {
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  padding: 0.25rem 0.75rem;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+}
+
+body .container #home .top-wrapper .text-wrapper button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 /*# sourceMappingURL=main.css.map */

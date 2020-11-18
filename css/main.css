@@ -137,25 +137,43 @@ body .container nav .account .signup:hover {
 }
 
 body .container section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+body .container #home {
+  background-image: url(../img/right.jpg);
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
 }
 
-body .container #home .main-logo {
+body .container #home .bottom-overlay {
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 40%;
+  height: 70vh;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+body .container #home .top-wrapper {
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 40%;
+  height: 70vh;
+  margin-left: -40%;
+  z-index: 1;
+}
+
+body .container #home .top-wrapper .main-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,22 +183,41 @@ body .container #home .main-logo {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 3rem 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-body .container #home .main-logo i.fas {
+body .container #home .top-wrapper .main-logo i.fas {
   color: yellowgreen;
 }
 
-body .container #home .main-logo p {
+body .container #home .top-wrapper .main-logo p {
   font-size: 3.6rem;
   margin-left: 10px;
 }
 
-body .container #home .main-logo p span {
+body .container #home .top-wrapper .main-logo p span {
   color: yellowgreen;
   font-weight: bold;
   font-style: oblique;
+}
+
+body .container #home .top-wrapper .text-wrapper {
+  padding: 3rem 1rem;
+}
+
+body .container #home .top-wrapper .text-wrapper h1 {
+  font-size: 3.6rem;
+  color: yellowgreen;
+}
+
+body .container #home .top-wrapper .text-wrapper h2 {
+  font-size: 2.7rem;
+  color: yellowgreen;
+}
+
+body .container #home .top-wrapper .text-wrapper p {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

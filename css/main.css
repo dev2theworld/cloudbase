@@ -248,6 +248,7 @@ body .container #about {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -264,24 +265,45 @@ body .container #about .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 0;
 }
 
 body .container #about .top .about-text h1 {
   font-size: 3.5rem;
-  margin-bottom: 3rem;
+  color: steelblue;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-body .container #about .top .about-text ul {
-  list-style: none;
-}
-
-body .container #about .top .about-text ul li {
+body .container #about .top .about-text h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+body .container #about .top .about-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+body .container #about .top .about-text button {
+  padding: 0.25rem 0.75rem;
+  background-color: steelblue;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+}
+
+body .container #about .top .about-text button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 body .container #about .top img {
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 400px;
 }
 
 body .container #about .bottom {
@@ -299,13 +321,14 @@ body .container #about .bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
   padding: 2rem 0;
   margin-top: 1.5rem;
 }
 
 body .container #about .bottom h2 {
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 body .container #about .bottom .languages-wrapper {
@@ -324,5 +347,15 @@ body .container #about .bottom .languages-wrapper .language {
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 5px grey;
           box-shadow: 2px 2px 5px grey;
+}
+
+body .container #about .bottom .languages-wrapper .language h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+body .container #about .bottom .languages-wrapper .language img {
+  width: 60px;
+  height: 60px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -491,6 +491,10 @@ body .container #pricing .pricing-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
 }
 
 body .container #pricing .pricing-wrapper .single-offer {
@@ -502,6 +506,14 @@ body .container #pricing .pricing-wrapper .single-offer {
 
 body .container #pricing .pricing-wrapper .single-offer #starter {
   background-color: yellowgreen;
+  width: 300px;
+  height: 100px;
+  margin-left: -32px;
+  margin-top: -32px;
+}
+
+body .container #pricing .pricing-wrapper .single-offer #pro {
+  background-color: #5c7b1e;
   width: 300px;
   height: 100px;
   margin-left: -32px;
@@ -523,17 +535,17 @@ body .container #pricing .pricing-wrapper .single-offer .description {
   margin-bottom: 3rem;
 }
 
-body .container #pricing .pricing-wrapper .single-offer p {
+body .container #pricing .pricing-wrapper .single-offer .pricing-btn {
   font-size: 1.3rem;
   padding: 0.75rem;
+  background-color: white;
   border: 1px solid gray;
+  width: 100%;
 }
 
-body .container #pricing .pricing-wrapper .single-offer .active {
-  opacity: 1;
-}
-
-body .container #pricing .pricing-wrapper .single-offer .disactive {
-  opacity: 0;
+body .container #pricing .pricing-wrapper .single-offer .pricing-btn:hover {
+  border: 2px solid black;
+  background-color: yellowgreen;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

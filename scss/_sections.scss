@@ -302,7 +302,23 @@ body {
           }
 
           #pro {
+            background-color: darken($color: $primary-color, $amount: 10%);
+            width: 300px;
+            height: 100px;
+            margin-left: -32px;
+            margin-top: -32px;
+          }
+
+          #business {
             background-color: darken($color: $primary-color, $amount: 20%);
+            width: 300px;
+            height: 100px;
+            margin-left: -32px;
+            margin-top: -32px;
+          }
+
+          #enterprise {
+            background-color: darken($color: $primary-color, $amount: 30%);
             width: 300px;
             height: 100px;
             margin-left: -32px;

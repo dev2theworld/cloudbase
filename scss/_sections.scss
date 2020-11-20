@@ -266,5 +266,69 @@ body {
         }
       }
     }
+
+    #pricing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: lighten($color: $primary-color, $amount: 25%);
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      .pricing-wrapper {
+        display: flex;
+
+        .single-offer {
+          background-color: white;
+          padding: 2rem;
+          width: 300px;
+          text-align: left;
+
+          #starter {
+            background-color: $primary-color;
+            width: 300px;
+            height: 100px;
+            margin-left: -32px;
+            margin-top: -32px;
+          }
+
+          h2 {
+            font-size: 2.5rem;
+            padding: 1rem 0 0.5rem;
+          }
+
+          h5 {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+          }
+
+          .description {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+            padding: 0.75rem;
+            border: 1px solid gray;
+          }
+
+          .active {
+            opacity: 1;
+          }
+
+          .disactive {
+            opacity: 0;
+          }
+        }
+      }
+    }
   }
 }

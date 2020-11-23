@@ -427,5 +427,65 @@ body {
         }
       }
     }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: lighten($color: gray, $amount: 10%);
+
+      &-top {
+        width: 80%;
+        
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            padding: 1rem 3rem;
+
+            a {
+              font-size: 1.4rem;
+              color: white;
+              text-decoration: none;
+
+              &:hover {
+                cursor: pointer;
+                color: darken($color: white, $amount: 10%);
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 1.6rem;
+        }
+
+        .socials {
+          display: flex;
+          margin: 1rem 0;
+          
+          i.fab {
+            color: white;
+            padding: 0 2rem;
+
+            &:hover {
+              cursor: pointer;
+              color: darken($color: white, $amount: 20%);
+            }
+          }
+        }
+      }
+    }
   }
 }

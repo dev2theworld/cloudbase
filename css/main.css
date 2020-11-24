@@ -480,7 +480,7 @@ nav .account .signup:hover {
 }
 
 #pricing h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 #pricing h3 {
@@ -600,8 +600,8 @@ nav .account .signup:hover {
 }
 
 #docs .docs-top h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 #docs .docs-top p {
@@ -725,6 +725,105 @@ nav .account .signup:hover {
   background-color: #333;
   color: white;
   padding: 10px;
+}
+
+#support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #cde699;
+}
+
+#support .support-top h1 {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
+
+#support .support-top h3 {
+  font-size: 2.5rem;
+  color: steelblue;
+  margin-bottom: 0.75rem;
+}
+
+#support .support-top p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#support .support-top button {
+  background-color: steelblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+#support .support-top button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+#support .support-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+#support .support-bottom-divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  background-color: white;
+}
+
+#support .support-bottom-divs .icon i.fas {
+  font-size: 2.5rem;
+  color: yellowgreen;
+  margin-right: 20px;
+}
+
+#support .support-bottom-divs .text h5 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#support .support-bottom-divs .text p {
+  font-size: 1.3rem;
+}
+
+#support .support-bottom-divs .text .text-button {
+  background-color: yellowgreen;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  margin-top: 1rem;
+}
+
+#support .support-bottom-divs .text .text-button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 .footer {

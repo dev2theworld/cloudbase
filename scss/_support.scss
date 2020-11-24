@@ -1,0 +1,90 @@
+#support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lighten($color: $primary-color, $amount: 25%);
+
+  .support-top {
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 6rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      color: $secondary-color;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: $secondary-color;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 2px 2px 5px black;
+      }
+    }
+  }
+
+  .support-bottom {
+    display: flex;
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: left;
+
+    &-divs {
+      display: flex;
+      padding: 2rem;
+      background-color: white;
+
+      .icon {
+
+        i.fas {
+          font-size: 2.5rem;
+          color: $primary-color;
+          margin-right: 20px;
+        }
+      }
+
+      .text {
+
+        h5 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        .text-button {
+          background-color: $primary-color;
+          color: white;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          margin-top: 1rem;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 2px 2px 5px black;
+          }
+        }
+      }
+    }
+  }
+}

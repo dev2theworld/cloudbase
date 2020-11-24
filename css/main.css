@@ -683,7 +683,7 @@ nav .account .signup:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding-right: 3rem;
+  padding: 0 7rem;
 }
 
 .footer-left .footer-logo a {
@@ -719,6 +719,7 @@ nav .account .signup:hover {
 .footer-left p {
   font-size: 1.2rem;
   color: white;
+  letter-spacing: 1px;
 }
 
 .footer-middle ul {
@@ -735,7 +736,7 @@ nav .account .signup:hover {
 }
 
 .footer-middle ul li {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 .footer-middle ul li a {
@@ -759,12 +760,13 @@ nav .account .signup:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 3rem 0 7rem;
 }
 
 .footer-right i.fab {
   color: white;
-  padding: 0 2rem;
-  font-size: 1.4rem;
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 
 .footer-right i.fab:hover {

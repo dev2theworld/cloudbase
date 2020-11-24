@@ -14,7 +14,7 @@
 
     h1 {
       font-size: 4rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -45,16 +45,89 @@
       text-align: left;
       border-right: 1px dotted black;
       width: 25%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px black;
 
       h3 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 0.25rem 0 0.25rem 1rem;
+          border-bottom: 1px solid gray;
+
+          .active {
+            color: $primary-color;
+          }
+          
+          a {
+            font-size: 1.4rem;
+            color: black;
+            text-decoration: none;
+          }
+        }
       }
     }
 
     .docs-right {
       background-color: white;
       margin-left: 3rem;
+      padding: 1rem 2rem;
       width: 55%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px black;
+      text-align: left;
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.75rem;
+      }
+
+      button {
+        padding: 0.25rem 1rem;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          box-shadow: 2px 2px 5px black;
+        }
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 0.5rem;
+      }
+
+      code,
+      pre {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
     }
   }
 }

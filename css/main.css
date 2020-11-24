@@ -601,7 +601,7 @@ nav .account .signup:hover {
 
 #docs .docs-top h1 {
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #docs .docs-top p {
@@ -638,16 +638,93 @@ nav .account .signup:hover {
   text-align: left;
   border-right: 1px dotted black;
   width: 25%;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 #docs .docs-bottom .docs-left h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+#docs .docs-bottom .docs-left ul {
+  list-style: none;
+}
+
+#docs .docs-bottom .docs-left ul li {
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-bottom: 1px solid gray;
+}
+
+#docs .docs-bottom .docs-left ul li .active {
+  color: yellowgreen;
+}
+
+#docs .docs-bottom .docs-left ul li a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
 }
 
 #docs .docs-bottom .docs-right {
   background-color: white;
   margin-left: 3rem;
+  padding: 1rem 2rem;
   width: 55%;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  text-align: left;
+}
+
+#docs .docs-bottom .docs-right h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+#docs .docs-bottom .docs-right p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#docs .docs-bottom .docs-right h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+#docs .docs-bottom .docs-right button {
+  padding: 0.25rem 1rem;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#docs .docs-bottom .docs-right button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+#docs .docs-bottom .docs-right h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#docs .docs-bottom .docs-right ul {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+#docs .docs-bottom .docs-right code,
+#docs .docs-bottom .docs-right pre {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
 .footer {

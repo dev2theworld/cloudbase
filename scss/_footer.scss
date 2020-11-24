@@ -1,0 +1,88 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: lighten($color: gray, $amount: 10%);
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 3rem;
+
+    .footer-logo {
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+
+        i.fas {
+          margin-right: 5px;
+          color: $primary-color;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 0.25rem;
+
+          span {
+            color: $primary-color;
+            font-style: oblique;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+    }
+  }
+
+  &-middle {
+    
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        padding: 1rem 3rem;
+
+        a {
+          font-size: 1.4rem;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+            color: darken($color: white, $amount: 10%);
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i.fab {
+      color: white;
+      padding: 0 2rem;
+      font-size: 1.4rem;
+
+      &:hover {
+        cursor: pointer;
+        color: darken($color: white, $amount: 20%);
+      }
+    }
+  }
+}

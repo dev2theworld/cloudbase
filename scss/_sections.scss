@@ -430,13 +430,51 @@ body {
 
     .footer {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem 0;
       background-color: lighten($color: gray, $amount: 10%);
 
-      &-top {
-        width: 80%;
+      &-left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 3rem;
+
+        .footer-logo {
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+
+            i.fas {
+              margin-right: 5px;
+              color: $primary-color;
+            }
+
+            h3 {
+              font-size: 1.8rem;
+              margin-bottom: 0.25rem;
+    
+              span {
+                color: $primary-color;
+                font-style: oblique;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 1.2rem;
+          color: white;
+        }
+      }
+
+      &-middle {
         
         ul {
           list-style: none;
@@ -461,28 +499,19 @@ body {
         }
       }
 
-      &-bottom {
+      &-right {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        p {
-          font-size: 1.6rem;
-        }
+        i.fab {
+          color: white;
+          padding: 0 2rem;
+          font-size: 1.4rem;
 
-        .socials {
-          display: flex;
-          margin: 1rem 0;
-          
-          i.fab {
-            color: white;
-            padding: 0 2rem;
-
-            &:hover {
-              cursor: pointer;
-              color: darken($color: white, $amount: 20%);
-            }
+          &:hover {
+            cursor: pointer;
+            color: darken($color: white, $amount: 20%);
           }
         }
       }

@@ -940,12 +940,44 @@ nav .account .signup:hover {
   color: #cccccc;
 }
 
+@media (max-width: 1480px) {
+  #home .bottom-overlay {
+    height: 75vh;
+  }
+  #home .top-wrapper {
+    height: 75vh;
+  }
+}
+
 @media (max-width: 1220px) {
   nav .logo {
     margin-right: 40px;
   }
   nav .account {
     margin-left: 40px;
+  }
+  #home .top-wrapper .main-logo {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #home .bottom-overlay {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #home .top-wrapper {
+    width: 60%;
+    margin-left: -100%;
+  }
+  #home .top-wrapper .main-logo {
+    padding: 1rem;
   }
 }
 

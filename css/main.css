@@ -957,6 +957,12 @@ nav .account .signup:hover {
   #support .support-top h1 {
     margin: 2rem 0 3rem 0;
   }
+  .footer-left {
+    padding: 0 3rem;
+  }
+  .footer-right {
+    padding: 0 3rem;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -1023,6 +1029,15 @@ nav .account .signup:hover {
   #support .support-bottom-divs {
     padding: 1rem;
   }
+  .footer-left {
+    padding: 0 1rem;
+  }
+  .footer-middle ul li {
+    padding: 1rem;
+  }
+  .footer-right {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1083,6 +1098,51 @@ nav .account .signup:hover {
   }
   #support .support-bottom-divs {
     padding: 2rem;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'middle' 'bottom' 'top';
+    /* &-left {
+      margin-right: 2rem;
+    }
+
+    &-middle {
+
+      ul {
+        flex-direction: column;
+        justify-content: right;
+        text-align: right;
+
+        li {
+          padding: 0.25rem;
+        }
+      }
+    }
+
+    &-right {
+      margin-left: 1rem;
+    } */
+  }
+  .footer-left {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: top;
+  }
+  .footer-middle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: middle;
+    margin-bottom: 1rem;
+  }
+  .footer-right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bottom;
+    margin-bottom: 1.5rem;
+  }
+  .footer-right i.fab {
+    padding: 0 2rem;
   }
 }
 

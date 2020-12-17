@@ -951,6 +951,12 @@ nav .account .signup:hover {
   #features {
     padding: 2rem 15rem;
   }
+  #support {
+    height: auto;
+  }
+  #support .support-top h1 {
+    margin: 2rem 0 3rem 0;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -1011,6 +1017,12 @@ nav .account .signup:hover {
   #docs .docs-bottom {
     margin-bottom: 3rem;
   }
+  #support .support-bottom {
+    width: 90%;
+  }
+  #support .support-bottom-divs {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1061,6 +1073,16 @@ nav .account .signup:hover {
   #docs .docs-bottom .docs-right {
     margin-left: 2rem;
     width: 60%;
+  }
+  #support .support-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  #support .support-bottom-divs {
+    padding: 2rem;
   }
 }
 

@@ -13,6 +13,17 @@
   #features {
     padding: 2rem 15rem;
   }
+
+  #support {
+    height: auto;
+
+    .support-top {
+
+      h1 {
+        margin: 2rem 0 3rem 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 1220px) {
@@ -101,6 +112,17 @@
       margin-bottom: 3rem;
     }
   }
+
+  #support {
+
+    .support-bottom {
+      width: 90%;
+
+      &-divs {
+        padding: 1rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -174,6 +196,18 @@
       .docs-right {
         margin-left: 2rem;
         width: 60%;
+      }
+    }
+  }
+
+  #support {
+
+    .support-bottom {
+      flex-direction: column;
+      width: 80%;
+
+      &-divs {
+        padding: 2rem;
       }
     }
   }

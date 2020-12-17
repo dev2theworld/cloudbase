@@ -88,6 +88,19 @@
       }
     }
   }
+
+  #docs {
+    height: auto;
+    width: 80%;
+
+    h1 {
+      margin-top: 2rem;
+    }
+
+    .docs-bottom {
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -145,6 +158,22 @@
         #enterprise {
           width: 340px;
         }
+      }
+    }
+  }
+
+  #docs {
+    width: 96%;
+
+    .docs-bottom {
+
+      .docs-left {
+        width: 30%;
+      }
+
+      .docs-right {
+        margin-left: 2rem;
+        width: 60%;
       }
     }
   }
@@ -272,6 +301,44 @@
       }
     }
   }
+
+  #docs {
+    
+    .docs-bottom {
+      
+      .docs-left {
+        width: 25%;
+        padding: 1rem;
+
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        ul {
+
+          li {
+
+            a {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+
+      .docs-right {
+        width: 70%;
+        margin-left: 1rem;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -306,6 +373,26 @@
 
       .single-offer {
         margin-top: 0;
+      }
+    }
+  }
+
+  #docs {
+
+    .docs-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .docs-left {
+        width: 80%;
+        margin-bottom: 1rem;
+      }
+
+      .docs-right {
+        width: 80%;
+        margin-left: 0;
       }
     }
   }

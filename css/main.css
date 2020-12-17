@@ -972,6 +972,35 @@ nav .account .signup:hover {
   #features {
     padding: 2rem 10rem;
   }
+  #pricing {
+    height: auto;
+  }
+  #pricing h1 {
+    margin-top: 2rem;
+  }
+  #pricing h3 {
+    margin-top: 1rem;
+  }
+  #pricing .pricing-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #pricing .pricing-wrapper .single-offer {
+    width: 400px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #pricing .pricing-wrapper .single-offer #starter,
+  #pricing .pricing-wrapper .single-offer #pro,
+  #pricing .pricing-wrapper .single-offer #business,
+  #pricing .pricing-wrapper .single-offer #enterprise {
+    width: 400px;
+  }
+  #pricing .pricing-wrapper .last {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1003,6 +1032,15 @@ nav .account .signup:hover {
   }
   #features {
     padding: 2rem 5rem;
+  }
+  #pricing .pricing-wrapper .single-offer {
+    width: 340px;
+  }
+  #pricing .pricing-wrapper .single-offer #starter,
+  #pricing .pricing-wrapper .single-offer #pro,
+  #pricing .pricing-wrapper .single-offer #business,
+  #pricing .pricing-wrapper .single-offer #enterprise {
+    width: 340px;
   }
 }
 
@@ -1092,6 +1130,36 @@ nav .account .signup:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #pricing .pricing-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pricing .pricing-wrapper .single-offer {
+    width: 400px;
+  }
+  #pricing .pricing-wrapper .single-offer #starter,
+  #pricing .pricing-wrapper .single-offer #pro,
+  #pricing .pricing-wrapper .single-offer #business,
+  #pricing .pricing-wrapper .single-offer #enterprise {
+    width: 400px;
+  }
+  #pricing .pricing-wrapper .last {
+    margin-bottom: 0;
+  }
+  #pricing .pricing-wrapper .bottom {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1104,6 +1172,12 @@ nav .account .signup:hover {
   }
   #features {
     padding: 2rem 3rem;
+  }
+  #pricing h3 {
+    margin-bottom: 2rem;
+  }
+  #pricing .pricing-wrapper .single-offer {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

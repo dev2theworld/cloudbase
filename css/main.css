@@ -367,6 +367,7 @@ nav .account .signup:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: auto;
   padding: 2rem 20rem;
 }
 
@@ -947,6 +948,9 @@ nav .account .signup:hover {
   #home .top-wrapper {
     height: 75vh;
   }
+  #features {
+    padding: 2rem 15rem;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -964,6 +968,9 @@ nav .account .signup:hover {
   }
   #about .top .about-text h1 {
     font-size: 3rem;
+  }
+  #features {
+    padding: 2rem 10rem;
   }
 }
 
@@ -993,6 +1000,9 @@ nav .account .signup:hover {
   #about .top img {
     width: 400px;
     height: 300px;
+  }
+  #features {
+    padding: 2rem 5rem;
   }
 }
 
@@ -1073,6 +1083,15 @@ nav .account .signup:hover {
         grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  #features .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1082,6 +1101,9 @@ nav .account .signup:hover {
   #about .bottom .languages-wrapper {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  #features {
+    padding: 2rem 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

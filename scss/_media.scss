@@ -9,6 +9,10 @@
       height: 75vh;
     }
   }
+
+  #features {
+    padding: 2rem 15rem;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -45,6 +49,10 @@
         }
       }
     }
+  }
+
+  #features {
+    padding: 2rem 10rem;
   }
 }
 
@@ -84,6 +92,10 @@
         height: 300px;
       }
     }
+  }
+
+  #features {
+    padding: 2rem 5rem;
   }
 }
 
@@ -172,6 +184,14 @@
       }
     }
   }
+
+  #features {
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -190,5 +210,9 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
+  }
+
+  #features {
+    padding: 2rem 3rem;
   }
 }

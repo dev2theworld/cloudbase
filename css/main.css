@@ -1053,11 +1053,35 @@ nav .account .signup:hover {
   #home .top-wrapper .text-wrapper button {
     font-size: 1.2rem;
   }
+  #about {
+    height: auto;
+  }
+  #about .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .top .about-text {
+    margin-bottom: 3rem;
+    margin-left: 0;
+  }
+  #about .bottom .languages-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 576px) {
   nav ul {
     width: 80%;
+  }
+  #about .bottom .languages-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -150,6 +150,28 @@
       }
     }
   }
+
+  #about {
+    height: auto;
+    
+    .top {
+      flex-direction: column;
+
+      .about-text {
+        margin-bottom: 3rem;
+        margin-left: 0;
+      }
+    }
+
+    .bottom {
+      
+      .languages-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -157,6 +179,16 @@
 
     ul {
       width: 80%;
+    }
+  }
+
+  #about {
+
+    .bottom {
+
+      .languages-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }
